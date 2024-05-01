@@ -1,0 +1,114 @@
+baseurl = "http://www.example.com"
+title = "johndoe"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Sam Krasnoff"
+  info = "Software Engineer"
+  info2 = "Aspiring Cybersecurity Professional"
+  description = "Sam's personal website"
+  keywords = "cybersecurity,developer,personal"
+  avatarURL = "images/quasar.jpg"
+  resumeurl = "images/Sam_Krasnoff_Resume.pdf"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2022
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/samkrasnoff/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/samkrasnoff/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/johndoe/"
+
+[[params.project]]
+  job_title = "Software Engineer"
+  company = "Columbia University"
+  start_date = "August 2022"
+  end_date = "Present"
+  description = ["Lead developer on cyberinfrastructure for volcanology research and modeling utilizing Jupyterhub framework", 
+    "Designing workflows and scripts to boost ease of use in the scientific community at all levels",
+    "Contributing to research paper development, as well as assisting in creating research grant proposals",
+    "Building a benchmarking tool to apply statistical analysis to opposing lava flow simulations"]
+  weight = 1
+[[params.project]]
+  job_title = "Software Engineering Intern"
+  company = "eFuse"
+  start_date = "August 2021"
+  end_date = "January 2022"
+  description = ["Developed integration tests for an extensive back-end proprietary API in an Agile environment", 
+    "Refreshed data models in TypeScript for more efficient and unified codebase",
+    "Hosted technical talks about new programming discoveries and participated in daily standups and weekly meetings with engineering team leads", 
+    "Created thorough documentation and stacked pulls requests to maximize clarity and productivity within the CI/CD methodology"]
+  weight = 2
+[[params.project]]
+  job_title = "Teaching Assistant"
+  company = "Boston University Mechanical Engineering Department"
+  start_date = "January 2019"
+  end_date = "May 2022"
+  description = [
+    "Leading core engineering class centered around MATLAB and C, while building best practices and work ethic.",
+    "Proctoring and grading monthly exams, handling sensitive student information.",
+    "Empowered students to achieve an average grade of B+/A- in the course by hosting open hours to discuss"]
+  weight = 3
+[[params.project]]
+  job_title = "I.T. Intern"
+  company = "Weitz & Luxenberg P.C."
+  start_date = "July 2019"
+  end_date = "August 2019"
+  description = ["Developed integration tests for an extensive back-end proprietary API in an Agile environment", 
+    "Refreshed data models in TypeScript for more efficient and unified codebase",
+    "Hosted technical talks about new programming discoveries and participated in daily standups and weekly meetings with engineering team leads",
+    "Created thorough documentation and stacked pulls requests to maximize clarity and productivity within the CI/CD methodology"]
+  weight = 4
+
+# Menu links
+[[menu.main]]
+  name = "Experience"
+  weight = 1
+  url  = "experience/"
+  [[menu.main]]
+  name = "Resume"
+  weight = 2
+  url = "resume/"
+[[menu.main]]
+  name = "About"
+  weight = 3
+  url = "about/"

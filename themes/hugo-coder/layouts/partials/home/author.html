@@ -1,0 +1,16 @@
+<h1>{{ .Site.Params.author }}</h1>
+{{ if reflect.IsSlice .Site.Params.info }}
+<h2>{{ range .Site.Params.info }}{{ . | markdownify }}<br>{{ end}}</h2>
+{{ else }}
+<h2>{{ .Site.Params.info | markdownify }} </h2>
+{{ end }}
+<h2 style="width: 0;
+font-family: 'SourceCodePro', monospace;
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: 3.5px solid transparent; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+animation: 
+  typing 3s steps(40, end) forwards,
+  blink-caret 1s step-end infinite;
+animation-delay: 4s;">{{ .Site.Params.info2 | markdownify }} </h2>
